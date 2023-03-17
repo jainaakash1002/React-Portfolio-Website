@@ -30,7 +30,7 @@
 
 - Clone this [repository](https://github.com/jainaakash1002/React-Portfolio-Website) to your local machine 
 - ```
-  git clone git@github.com:Meri-MG/portfolio---react.git
+  git clone https://github.com/jainaakash1002/React-Portfolio-Website.git
   ```
 
 - Navigate to `cd React-Portfolio-Website`  directory.
