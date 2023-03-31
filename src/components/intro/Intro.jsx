@@ -20,7 +20,7 @@ const Intro = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>1 year +</small>
+              <small>2 year +</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
@@ -29,12 +29,12 @@ const Intro = () => {
             </article>
           </div>
           <p>
-            I'm an Software Engineer adept in bringing forth
-            expertise in design, coding, testing and maintenance of software
-            systems. Equipped with a diverse and promising skill set. Proficient
-            in various platforms, languages, and embedded systems. Experienced
-            with the latest cutting edge development tools and procedured. Able
-            to effectively self-manage during independent projects, as well as
+            I'm an Software Engineer adept in bringing forth expertise in
+            design, coding, testing and maintenance of software systems.
+            Equipped with a diverse and promising skill set. Proficient in
+            various platforms, languages, and embedded systems. Experienced with
+            the latest cutting edge development tools and procedured. Able to
+            effectively self-manage during independent projects, as well as
             collaborate as part of a productive team. Lover of innovation and
             everything related to generate new knowledge. Face problems with a
             smile and solve them as soon as possible. Very calculated about the

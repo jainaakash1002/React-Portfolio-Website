@@ -51,7 +51,7 @@ const Portfolio = () => {
     {
       title: "Personal Portfolio Website Using Angular",
       img: PA,
-      link: "https://jainaakash1002.netlify.app/",
+      link: "https://aakash-jain.netlify.app/#/",
       github: "https://github.com/jainaakash1002/Angular-Portfolio-Website.git",
     },
     {
@@ -110,7 +110,7 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {soloProjects.map((pro,index) => (
+        {soloProjects.map((pro, index) => (
           <article className="portfolio__item" key={index}>
             <div className="portfolio__item-image">
               <img src={pro.img} alt={pro.title} />
@@ -126,7 +126,12 @@ const Portfolio = () => {
               ) : null}
               {pro.link != null ? (
                 <>
-                  <a href={pro.link} className="btn btn-primary">
+                  <a
+                    href={pro.link}
+                    className="btn btn-primary"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Live Demo
                   </a>
                 </>
