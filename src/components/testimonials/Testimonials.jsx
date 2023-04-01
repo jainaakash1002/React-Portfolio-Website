@@ -50,7 +50,7 @@ const Testimonials = () => {
           <SwiperSlide className="testimonial" key={test.id}>
             {test.link && (
               <div className="client__avatar">
-                <a href={test.link}>
+                <a href={test.link} target="_blank" rel="noreferrer">
                   <BsLinkedin />
                 </a>
               </div>
