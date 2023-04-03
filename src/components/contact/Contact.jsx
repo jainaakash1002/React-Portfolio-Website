@@ -1,22 +1,43 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import { MdOutlineEmail } from 'react-icons/md';
-import './contact.css';
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { MdOutlineEmail } from "react-icons/md";
+import Swal from "sweetalert2";
+import "./contact.css";
 
 const Contact = () => {
   const formRef = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_ae68sdc', 'template_gpqqs0i', formRef.current, 'user_6tYcWIjggXKbgRkYsjHGI')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_ae68sdc",
+        "template_gpqqs0i",
+        formRef.current,
+        "ikO7RNy8JG1YOMHbW"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+          Swal.fire({
+            title: "Success!",
+            text: "Your message has been sent successfully.",
+            icon: "success",
+            confirmButtonText: "OK",
+          });
+        },
+        (error) => {
           console.log(error.text);
-      });
+          Swal.fire({
+            title: "Error!",
+            text: "An error occurred while processing your request.",
+            icon: "error",
+            confirmButtonText: "OK",
+          });
+        }
+      );
 
-      e.target.reset();
-  }
+    e.target.reset();
+  };
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -31,15 +52,31 @@ const Contact = () => {
           </article>
         </div>
         <form ref={formRef} onSubmit={handleSubmit}>
-          <input type="text" placeholder="Your Full Name" name="user_name" required />
-          <input type="text" placeholder="Your Email" name="user_email" required/>
-          <textarea placeholder="Your message" rows="7" name="message" required></textarea>
-          <button type="submit" className="btn btn-primary">Send Message</button>
+          <input
+            type="text"
+            placeholder="Your Full Name"
+            name="user_name"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Your Email"
+            name="user_email"
+            required
+          />
+          <textarea
+            placeholder="Your message"
+            rows="7"
+            name="message"
+            required
+          ></textarea>
+          <button type="submit" className="btn btn-primary">
+            Send Message
+          </button>
         </form>
       </div>
-
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
