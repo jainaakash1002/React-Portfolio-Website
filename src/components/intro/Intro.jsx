@@ -35,9 +35,7 @@ const Intro = () => {
 						frontend and backend systems - including leading a scalable web app
 						that increased user engagement by 30% and optimising backend
 						performance to reduce load time by 20% - my passion lies in crafting
-						seamless, high-performance user interfaces. I’m now seeking a
-						frontend-focused Software Developer role where I can apply my
-						expertise to create engaging and efficient digital experiences.
+						seamless, high-performance user interfaces.
 					</p>
 					<a href="#contact" className="btn btn-primary">
 						Let's Talk
